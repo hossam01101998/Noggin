@@ -1,0 +1,167 @@
+@font-face {
+    font-family: font1;
+    src: url('AveriaSerifLibre-Regular.ttf');
+}
+
+body {
+    font-family: font1, cursive;
+    margin: 0;
+}
+header{
+    background-color: #FEFFF8;
+    text-align: center;
+    padding: 0 60px 20px 60px;
+}
+.logo {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    /*commentair*/
+}
+h1, h2, h3 {
+    color: #1e403b;
+    font-size: 40px;
+    line-height: 36px;
+}
+h3{
+    font-size: 24px;
+    line-height: 30px;
+
+}
+p, a {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+a {
+    padding: 15px;
+    border: 1px solid #1e403b;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #1e403b;
+    background-color: 10px;
+
+/* mobile version */
+display: block;
+
+}
+a:hover {
+    background-color: #eee;
+}
+a.join-beta {
+    background-color: #ffc55c;
+}
+a.join-beta:hover {
+    background-color:#f3ba52;
+}
+section.introduction {
+    background-color: #F6F8EA;
+    text-align: center;
+    padding: 30px 50px 0 50px;
+}
+
+section.pricing {
+    background-color: #FEFFF8;
+    text-align: center;
+    padding: 50px 60px 20px 60px;
+}
+
+section.ready {
+    background-color: #8295ea;
+    text-align: center;
+    padding: 50px 60px 50px 60px;
+}
+
+section.ready h2,
+section.ready p {
+    color: #FFF;
+}
+.why, .price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.why div,
+.price div {
+    /* mobile version */
+    width: 100%;
+}
+
+.price div {
+    background-color: #F6F8EA;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.why img {
+    width: 100%;
+}
+.price ul {
+    text-align: left;
+}
+h3.new-price {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+h3.old-price {
+    text-decoration: line-through;
+    margin-bottom: 0;
+}
+
+h3.per-month {
+    margin-top: 0;
+}
+a.subscribe {
+    margin-right: 0;
+    margin-top: 50px;
+}
+
+.color {
+    background-color: #8295ea;
+}
+
+
+@media (min-width : 480px) {
+    a{
+        /*tablet & desktop version*/
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .why div {
+        /* tablet version */
+        width : 40%;
+    }
+}
+@media (min-width : 768px) {
+    h1{
+        font-size: 80px;
+        line-height: 70px;
+    }
+    .why div {
+        /* desktop version */
+        width : 26%;
+    }
+    .price div {
+        /* desktop version */
+        width: 24%;
+    }
+}
+@media (min-width: 1024px) {
+    .wrapper {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .outer-wrapper {
+        width: 100%;
+    }
+
+    .light {
+        background-color: #FEFFF8;
+    }
+
+    .dark {
+        background-color: #F6F8EA;
+    }
+}
+    
